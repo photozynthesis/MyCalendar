@@ -1,0 +1,51 @@
+.myCalendar_body {
+    width: 300px;
+    height: auto;
+    background-color: #ffe599;
+    padding: 2px 10px;
+    border: 1px solid #ffce3e;
+    box-shadow: 8px 8px 10px #333333;
+}
+.myCalendar_currentTime, .myCalendar_currentDate {
+    line-height: 60%;
+}
+.myCalendar_msg {
+    line-height: 1px;
+}
+.myCalendar_controlPanel {
+    display: table;
+    width: 100%;
+    margin: 10px 0px;
+    padding-top: 5px;
+}
+.myCalendar_panelButton {
+    display: table-cell;
+    text-align: center;
+    cursor: pointer;
+}
+.myCalendar_panelButton:hover {
+    background-color: #bbbbbb;
+}
+.myCalendar_panelItem {
+    display: table-cell;
+    text-align: center;
+}
+.myCalendar_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.myCalendar_table th {
+    text-align: center;
+    height: 30px;
+}
+.myCalendar_table td {
+    text-align: center;
+    height: 45px;
+    /*border: 1px solid #666666;*/
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.myCalendar_table td:hover {
+    background-color: #9fc5e8;
+    border: 1px solid transparent;
+}

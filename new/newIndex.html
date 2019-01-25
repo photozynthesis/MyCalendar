@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyCalendar</title>
+    <script src="js/newMyCalendar.js"></script>
+    <link rel="stylesheet" href="css/newMyCalendar.css">
+    <script>
+        window.onload = function () {
+            MyCalendar.bind({
+                selectors: ['.calendar', '#cal']
+            });
+        };
+    </script>
+</head>
+<body>
+    <ul>
+        <span>
+            <li style="float: left">
+                <p>Mount point 1:</p>
+                <div class="calendar"></div>
+            </li>
+            <li style="float: left;margin-left: 60px">
+                <p>Mount point 2:</p>
+                <div class="calendar"></div>
+            </li>
+            <li style="float: left;margin-left: 60px">
+                <p>Mount point 3:</p>
+                <div id="cal"></div>
+            </li>
+        </span>
+    </ul>
+</body>
+</html>
