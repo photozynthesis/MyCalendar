@@ -22,6 +22,10 @@
     display: table-cell;
     text-align: center;
     cursor: pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
 }
 .myCalendar_panelButton:hover {
     background-color: #bbbbbb;
@@ -48,4 +52,10 @@
 .myCalendar_table td:hover {
     background-color: #9fc5e8;
     border: 1px solid transparent;
+}
+.myCalendar_tableValue {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
 }
