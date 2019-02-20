@@ -4,7 +4,7 @@
     background-color: #ffe599;
     padding: 2px 10px;
     border: 1px solid #ffce3e;
-    box-shadow: 8px 8px 10px #333333;
+    box-shadow: 0px 0px 15px #333333;
 }
 .myCalendar_currentTime, .myCalendar_currentDate {
     line-height: 60%;
@@ -29,6 +29,7 @@
 }
 .myCalendar_panelButton:hover {
     background-color: #bbbbbb;
+    border-radius: 10%;
 }
 .myCalendar_panelItem {
     display: table-cell;
@@ -52,6 +53,7 @@
 .myCalendar_table td:hover {
     background-color: #9fc5e8;
     border: 1px solid transparent;
+    border-radius: 20%;
 }
 .myCalendar_tableValue {
     -webkit-user-select:none;

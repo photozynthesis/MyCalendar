@@ -22,9 +22,9 @@ let MyCalendar = (function () {
         start: function () {
             // 监控时间字符串变量，在改变时修改 dom
             Object.defineProperty(calendarViewTimeManager, 'timeStr', {
-                get: function () {
-                    return calendarViewTimeManager.timeStr;
-                },
+                // get: function () {
+                //     return calendarViewTimeManager.timeStr;
+                // },
                 set: function (timeStr) {
                     for (let timeElement of calendarViewTimeManager.timeElements) {
                         timeElement.innerHTML = timeStr;
@@ -34,9 +34,9 @@ let MyCalendar = (function () {
             });
             // 监控日期字符串变量，在改变时修改 dom
             Object.defineProperty(calendarViewTimeManager, 'dateStr', {
-                get: function () {
-                    return calendarViewTimeManager.dateStr;
-                },
+                // get: function () {
+                //     return calendarViewTimeManager.dateStr;
+                // },
                 set: function (dateStr) {
                     for (let dateElement of calendarViewTimeManager.dateElements) {
                         dateElement.innerHTML = dateStr;
@@ -215,7 +215,7 @@ let MyCalendar = (function () {
 
         // 通过当前 date，显示日历区域的日期字符串
         printDateStr(date) {
-            document.getElementById(this.id_panelItem).innerHTML = utils.getDateStr(date);
+            document.getElementById(this.id_panelItem).innerHTML = '<b>' + utils.getDateStr(date) + '</b>';
         }
 
         // 通过日期数据，打印当前实例的日历表格
@@ -251,9 +251,9 @@ let MyCalendar = (function () {
                 </span>
                 <hr>
                 <div class="myCalendar_controlPanel">
-                    <div class="myCalendar_panelButton" id="${this.id_panelButton_prev}">&lt;</div>
+                    <div class="myCalendar_panelButton" id="${this.id_panelButton_prev}"><b>&lt;</b></div>
                     <div class="myCalendar_panelItem" id="${this.id_panelItem}">${this.panelItemStr}</div>
-                    <div class="myCalendar_panelButton" id="${this.id_panelButton_next}">&gt;</div>
+                    <div class="myCalendar_panelButton" id="${this.id_panelButton_next}"><b>&gt;</b></div>
                 </div>
                 <table class="myCalendar_table">`;
             for (let i = 0; i < 7; i ++) {
